@@ -1,0 +1,7 @@
+pip install --upgrade django_music_publisher
+from music_publisher.royalty_calculation import RoyaltyCalculationView
+
+urlpatterns = [
+    ...
+    path('royalty_calculation/', RoyaltyCalculationView.as_view(), name='royalty_calculation'),
+]
